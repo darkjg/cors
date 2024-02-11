@@ -13,13 +13,11 @@ function getInfo() {
         <p>${status}</p>           
         <p>${species}</p> 
         <p>${gender}</p>
-        `//
-        console.log(originNombre)
-            if (originNombre != "unknown") {
-                info.innerHTML += `
-            <p>${originNombre}</p> 
-            `
-            }
+        `
+        if (originNombre != "unknown") {
+            info.innerHTML += `
+        <p>${originNombre}</p> 
+        `}
 
         }).catch(error => {
             info.innerHTML = `<p>imposible acceder al personaje</p>`
